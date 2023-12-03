@@ -1,7 +1,15 @@
+<script>
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		// ScrollReveal().reveal('.service');
+	});
+</script>
+
 <section class="sixthsection">
 	<p id="header"><span>Our</span> Services</p>
 	<ul>
-		<li>
+		<li class="service">
 			<div><span>01</span> Archietural Design</div>
 			<p id="ourservice-text">
 				We are highly specialized in creating breath taking architectural forms that behold the eye.
@@ -9,7 +17,7 @@
 				We always deliver the best results from residential to commercial projects.
 			</p>
 		</li>
-		<li>
+		<li class="service">
 			<div><span>02</span> Interior Design</div>
 			<p id="ourservice-text">
 				With a superb focus on detail and a passion for creating wonderful solutions,we transform
@@ -18,7 +26,7 @@
 				dream interior spaces.
 			</p>
 		</li>
-		<li>
+		<li class="service">
 			<div><span>03</span> Construction And Project Management</div>
 			<p id="ourservice-text">
 				Whether it's a new building or renovation, our skilled team will ensure that every detail is
@@ -26,7 +34,7 @@
 				prepares detailed drawings, specifications and documentation required for construction
 			</p>
 		</li>
-		<li>
+		<li class="service">
 			<div><span>04</span>CONSULTATION</div>
 			<p id="ourservice-text">
 				We offer professional and comprehensive consultation services and assist you to make a

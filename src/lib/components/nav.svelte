@@ -1,22 +1,33 @@
-<div class="home-menu pure-menu pure-menu-horizontal nav-bar pure-menu-fixed">
+<script>
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		ScrollReveal().reveal('.links');
+	});
+</script>
+
+<div class="pure-menu pure-menu-horizontal nav-bar">
 	<!-- logo -->
 	<a class="pure-menu-heading logo" href="/">
 		<img src="/logo/studio logo001.png" alt="log" />
 	</a>
 	<!-- menu -->
-	<button class="pure-button pure-menu-item">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="20px"
-			><path
-				d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
-			/></svg
-		>
-	</button>
+	<ul class="links">
+		<li><a href="/" class="pure-menu-link">HOME</a></li>
+		<li><a href="/villas" class="pure-menu-link">Villas</a></li>
+		<li><a href="/towers" class="pure-menu-link">Towers</a></li>
+		<li><a href="/masterplan" class="pure-menu-link">Masterplan</a></li>
+		<li><a href="/about" class="pure-menu-link">About Us</a></li>
+		<li><a href="/contact" class="pure-menu-link">contact</a></li>
+	</ul>
 </div>
 
 <style>
 	.nav-bar {
 		height: 50px;
-		/* border: black solid 1px; */
+		display: flex;
+		position: absolute;
+		z-index: 1;
 	}
 	.logo {
 		/* border: red solid 1px; */
@@ -27,10 +38,18 @@
 		height: 48px;
 	}
 
-	button {
-		width: 15%;
-		background: none;
-		position: absolute;
-		right: 0px;
+	.links {
+		list-style-type: none;
+		color: #666666;
+		opacity: 0.9;
+		display: flex;
+		font-size: 8px;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		padding: 0;
+	}
+	.links a {
+		color: black;
+		text-transform: uppercase;
 	}
 </style>

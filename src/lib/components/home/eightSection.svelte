@@ -1,12 +1,15 @@
+<script>
+</script>
+
 <section class="eightsection">
 	<p>Break the paradigm of traditional architecture and reinvent the concept of design</p>
 	<div>
-		<img src="/home/site 6/site_6_sm.png" alt="banner" />
+		<img loading="lazy" src="/home/site 6/site_6_sm.png" alt="banner" />
 	</div>
 </section>
 
 <style>
-    img {
+	img {
 		width: 100%;
 	}
 	.eightsection p {

@@ -1,6 +1,6 @@
 <section class="ninethsection">
 	<div>
-		<img src="/home/site 7/site_7_sm.png" alt="banner" />
+		<img loading="lazy" src="/home/site 7/site_7_sm.png" alt="banner" />
 	</div>
 	<div>
 		<p>
